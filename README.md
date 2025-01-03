@@ -1,5 +1,5 @@
 
-# RISC-V 32-bit Sequential Processor
+# RISC-V 32-Bit Sequential Processor
 
 ## Overview
 This repository contains the design and simulation resources for a 32-bit sequential RISC-V processor -- developed with Vivado -- and a series of design schematics. For a high-level description of the processor development, visit the [RISC-V Single-Cycle Processor](https://kirbyburkejr.com/projects/verilog-risc-v-processor) page on my portfolio site.
