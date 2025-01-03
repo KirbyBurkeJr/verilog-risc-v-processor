@@ -1,14 +1,14 @@
 
-# RISC-V 32-bit Single-Cycle Processor
+# RISC-V 32-bit Sequential Processor
 
 ## Overview
-This repository contains the design and simulation resources for a 32-bit, single-cycle, RISC-V processor -- developed with Vivado -- and a series of design schematics. For a high-level description of the processor development, visit the [RISC-V Single-Cycle Processor](https://kirbyburkejr.com/projects/verilog-risc-v-processor) page on my portfolio site.
+This repository contains the design and simulation resources for a 32-bit sequential RISC-V processor -- developed with Vivado -- and a series of design schematics. For a high-level description of the processor development, visit the [RISC-V Single-Cycle Processor](https://kirbyburkejr.com/projects/verilog-risc-v-processor) page on my portfolio site.
 
 ## Features
 
-### Single-Cycle Architecture
+### Sequential Processing
 
-This processor's single-cycle design works through the following stages to calculate and return a 32-bit result.
+This processor's sequential processing design passes a discrete instruction through each of the following five RISC stages to calculate and return a 32-bit result before processing subsequent instructions.
 - Instruction Fetch (IF)
 - Instruction Decode (ID)
 - Execution (EX)
@@ -22,11 +22,13 @@ This processor contains the following subset of RISC-V instructions. All arithme
 **R-Type**
 - add
 - and
-- nor
+- nor+
 - or
-- seq (set if equal)
+- seq+ (set if equal)
 - slt (set less than)
 - sub (subtract)
+
++ The nor and seq instructions are custom. They're not included within the standard RISC-V ISA, but are compatible with it.
 
 **I-Type**
 - addi
