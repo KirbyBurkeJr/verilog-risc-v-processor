@@ -22,13 +22,13 @@ This processor contains the following subset of RISC-V instructions. All arithme
 **R-Type**
 - add
 - and
-- nor+
+- *nor*
 - or
-- seq+ (set if equal)
+- *seq* (set if equal)
 - slt (set less than)
 - sub (subtract)
 
-+ The nor and seq instructions are custom. They're not included within the standard RISC-V ISA, but are compatible with it.
+*The nor and seq instructions are custom. They're not included within the standard RISC-V ISA, but are compatible with it.*
 
 **I-Type**
 - addi
